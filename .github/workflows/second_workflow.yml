@@ -1,5 +1,5 @@
 name: second_workflow
-on: dispatch_workflow
+on: workflow_dispatch
 jobs:
   job-1:
     runs-on: ubuntu_latest
