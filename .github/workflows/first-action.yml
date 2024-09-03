@@ -1,0 +1,21 @@
+# use the reserved keywork 'on' to define the name of the worklfow
+name: First Workflow
+
+# use the reserved keywork 'on' to define the event or events to trigger this workflow.
+# event: workflow_dispatch manually triggers the workflow.
+on: workflow_dispatch
+
+# define the work that should be done
+# use the reserved keywork 'jobs' to define the work 
+jobs:
+  first-job:
+    # define the runner (environment where this job should be run)
+    # use the reserved keywork 'runs-on' to define the runner.
+    # search for the latest github action runners here in this page: https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners
+    runs-on: ubuntu-latest
+    # use the reserved keyword 'steps' to define the steps.
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done!"
