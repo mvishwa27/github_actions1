@@ -1,1 +1,1 @@
-this is a demo project to learn about the github actions
+this is a demo project to learn about the github actions.
