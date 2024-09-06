@@ -1,0 +1,10 @@
+name: third workflow
+on: workflow_dispatch
+jobs:
+  job1: 
+    runs-on: ubuntu_latest
+    steps:
+      - name: greetings
+      - run: |
+          echo "good day"
+          echo "done"
