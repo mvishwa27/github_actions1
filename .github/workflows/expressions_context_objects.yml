@@ -1,0 +1,8 @@
+name: expressions_context_objects_workflow
+on: workflow_dispatch
+jobs:
+    job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get meta data
+              run: echo "{{toJSON(github)}}"
