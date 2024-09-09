@@ -14,8 +14,10 @@ jobs:
               run: |
                 python --version
                 pip --version
-            - name: install mkdocs and check the version
+            - name: install mkdocs and check the versions
               run: |
                 pip install mkdocs
+                pip install mkdocs-material
                 # check mkdocs is installed
-                mkdocs --version 
+                mkdocs --version
+                pip list 
