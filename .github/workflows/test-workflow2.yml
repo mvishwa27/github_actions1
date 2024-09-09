@@ -8,5 +8,5 @@ jobs:
               uses: actions/checkout@v4
             - name: print message
               run: |
-                sh pwd
+                pwd
                 echo "hello Vishwanathan!"

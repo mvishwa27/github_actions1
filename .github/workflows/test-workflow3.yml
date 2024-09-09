@@ -9,5 +9,5 @@ jobs:
             - name: run commands
               run: |
                 echo "start"
-                sh "pwd"
+                pwd
                 ech0 "end"
