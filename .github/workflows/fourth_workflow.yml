@@ -14,3 +14,8 @@ jobs:
               run: |
                 python --version
                 pip --version
+            - name: install mkdocs and check the version
+              run: |
+                pip install mkdocs
+                # check mkdocs is installed
+                mkdocs --version 
