@@ -1,0 +1,13 @@
+name: test-workflow3
+on: push
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout my repository
+              uses: actions/checkout@v4
+            - name: run commands
+              run: |
+                echo "start"
+                sh "pwd"
+                ech0 "end"
