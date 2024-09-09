@@ -1,0 +1,12 @@
+name: test-workflow2
+on: push
+jobs:
+    job:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: fetch code and checkout my repository
+              uses: actions/checkout@v4
+            - name: print message
+              run: |
+                echo "pwd"
+                echo "hello Vishwanathan!"
