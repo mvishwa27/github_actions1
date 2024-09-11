@@ -1,0 +1,14 @@
+name: multiple_jobs_demo
+on: workflow_dispatch
+jobs:
+    job1:
+        runs-on: ubuntu_latest
+        steps:
+            - name: print hello
+              run:  echo "hello.."
+    job2:
+        needs: job1
+        runs-on: ubuntu_latest
+        steps:
+            - name:  print good bye
+              run:  echo "good bye.."        
