@@ -1,0 +1,12 @@
+# workflow will be triggerd on manual events or events filtered with changes pushed to main branch 
+name: filter_push
+on: 
+    workflow_dispatch:
+    push:
+        branches: [main]
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: print some message
+              run: echo "success"      
