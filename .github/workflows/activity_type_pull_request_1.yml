@@ -10,4 +10,5 @@ jobs:
             - name: print hello and bye
               run: |
                 echo "hello"
-                echo "bye"  
+                echo "bye"
+                  
