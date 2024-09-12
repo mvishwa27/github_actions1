@@ -1,0 +1,13 @@
+name: filter_push_demo2
+on: 
+    push:
+        branches:
+            - main # main
+            - dev-* # dev-new dev-this-is-new  (* all branches starting with dev- or other combination of other characters)
+            - feat/**  # feat/new feat/new/button  (** all branches starting with feat/ and including more slashes)
+jobs: 
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print
+              run: echo "success"  
