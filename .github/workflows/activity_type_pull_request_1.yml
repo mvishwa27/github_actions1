@@ -1,0 +1,13 @@
+name: activity_type_pull_request_1
+on:
+    pull_request:
+        types: [opened]
+    workflow_dispatch:
+jobs:
+    job1:
+        runs-on: ubuntu_latest
+        steps:
+            - name: print hello and bye
+              run: |
+                echo "hello"
+                echo "bye"  
