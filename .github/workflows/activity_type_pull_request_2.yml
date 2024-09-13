@@ -3,7 +3,7 @@ on:
     pull_request:
         types: opened
     push:
-        branch: main
+        branches: main
     workflow_dispatch:
 jobs:
     job1:
