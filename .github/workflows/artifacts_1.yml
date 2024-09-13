@@ -1,0 +1,23 @@
+name: artifacts_1
+on: 
+    push:
+        branches: main
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print message1
+              run: "hello-1"
+    job2:
+        needs: job1
+        runs-on: ubuntu-latest  
+        steps: 
+            - name: print message 2
+              run: "hello-2"
+    job3:
+        needs: job2
+        runs-on: ubuntu_latest
+        steps:
+            - name: print message 3
+              run: "hello-3"
+
