@@ -1,0 +1,26 @@
+name: download_artifacts
+on: 
+    push:
+        branches: main
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: create folders and files
+              run: |
+                mkdir -p f1/f2/f3
+                echo "Tom" >  f1/f2/f3/name1.txt
+                echo "Jerry" >  f1/f2/f3/name2.txt
+            - name: upload artifacts
+              uses: actions/upload-artifact@v4
+              with:
+                 name: cartoons
+                 path: f1/f2/f3/
+    job2:
+        needs: job1
+        runs-on: ubuntu-latest
+        steps: 
+            - uses: actions/download-artifact@v4
+              with: 
+                name: cartoons
+            - run: ls              
