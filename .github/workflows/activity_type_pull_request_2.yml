@@ -1,0 +1,13 @@
+name: activity_type_pull_request_2
+on:
+    pull_request:
+        types: opened
+    push:
+        branch: main
+    workflow_dispatch:
+jobs:
+    job1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: print message
+              run: echo "success.."
