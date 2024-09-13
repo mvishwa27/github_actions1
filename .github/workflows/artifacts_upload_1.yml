@@ -9,7 +9,7 @@ jobs:
             - name: create directories and files
               run: |
                 echo "uploading.."
-                mkdir one/two/three
+                mkdir -p one/two/three
                 echo "Vishwanathan" > one/two/three/name.txt
                 echo "India" > one/two/three/country.txt
             - name: upload all artifacts             
