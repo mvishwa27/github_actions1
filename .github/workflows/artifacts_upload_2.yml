@@ -1,0 +1,18 @@
+name: artifacts_upload_2
+on: 
+    push:
+        branches: main
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: create directories and files
+              run: |
+                mkdir -p f1/f2/f3
+                echo "India" > f1/f2/f3/country1.txt
+                echo "Singapore" > f1/f2/f3/country2.txt
+            - name: upload artifacts             
+              uses: actions/upload-artifact@v4
+              with:
+                name: countries
+                path: f1/f2/f3/   
