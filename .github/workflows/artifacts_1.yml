@@ -16,7 +16,7 @@ jobs:
               run: echo "hello-2"
     job3:
         needs: job2
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             - name: print message 3
               run: echo "hello-3"
