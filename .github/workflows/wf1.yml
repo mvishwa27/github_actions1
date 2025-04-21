@@ -1,0 +1,10 @@
+name: wf1
+on: workflow_dispatch
+jobs:
+  job-one:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greetings
+        run: echo "good day!"
+      - name: print done
+        run: echo "complete"  
