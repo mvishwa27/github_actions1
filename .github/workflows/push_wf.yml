@@ -1,0 +1,8 @@
+name: push_wf
+on: push
+jobs:
+    job1: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout_code
+              uses: actions/checkout@v4 
