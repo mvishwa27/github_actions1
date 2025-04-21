@@ -1,0 +1,10 @@
+name: wf2
+on: workflow_dispatch
+jobs:
+  job-one:
+    runs-on: ubuntu-latest
+    steps:  
+      - name: print test
+        run: |
+          echo "Hello Vishwa"
+          echo "Done"
